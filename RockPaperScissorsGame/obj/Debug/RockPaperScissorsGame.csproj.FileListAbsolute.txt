@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\bin\Debug\RockPaperScissorsGame.exe.config
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\bin\Debug\RockPaperScissorsGame.exe
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\bin\Debug\RockPaperScissorsGame.pdb
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.csprojAssemblyReference.cache
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\MainWindow.g.cs
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\App.g.cs
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame_MarkupCompile.cache
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame_MarkupCompile.lref
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\MainWindow.baml
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.g.resources
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.Properties.Resources.resources
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.csproj.GenerateResource.cache
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.exe
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\RockPaperScissorsGame.pdb
+C:\Users\User\source\repos\RockPaperScissorsGame\RockPaperScissorsGame\obj\Debug\GeneratedInternalTypeHelper.g.cs

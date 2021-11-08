@@ -1,0 +1,78 @@
+﻿<Window x:Class="RockPaperScissorsGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockPaperScissorsGame"
+        mc:Ignorable="d"
+        Title="Rock-Paper-Scissors Game" Height="350" Width="525" ResizeMode="NoResize">
+    <Window.Resources>
+
+        <local:MessageConverter x:Key="MessageConverter"/>
+
+        <Style x:Key="btnStyle" x:Name="btnPlayer" TargetType="Button">
+            <Setter Property="Height" Value="80"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Background" Value="Beige"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="0.7*"></ColumnDefinition>
+            <ColumnDefinition Width="0.7*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Background="Black" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"></Label>
+   
+            <Label Content="Players Choice" Grid.Column="3" Grid.Row="0" FontSize="15" 
+                   Foreground="White" 
+                   FontWeight="Bold" HorizontalAlignment="Center"></Label>
+        <StackPanel  Margin="10,40,10,0" Grid.Row="0" Grid.Column="3" Grid.RowSpan="4">
+            <Button Name="btnPaper" Grid.Column="3" Grid.Row="1" Style="{StaticResource btnStyle}" Click="btnPaper_Click">
+                <Image x:Name="imgPaper"  Source="Images\Paper.bmp" Stretch="None"></Image>
+            </Button>
+            <Button Name="btnRock" Grid.Column="3" Grid.Row="2" Style="{StaticResource btnStyle}" Click="btnRock_Click">
+                <Image Source="Images\Rock.bmp" Stretch="None"></Image>
+            </Button>
+            <Button Name="btnScissors" Grid.Column="3" Grid.Row="3" Style="{StaticResource btnStyle}" Click="btnScissors_Click">
+                <Image Source="Images\Scissors.bmp" Stretch="None"></Image>
+            </Button>
+            </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="4">
+            <Label Content="Computer's Choice" Grid.Column="0" Grid.Row="0" FontSize="15" 
+                   Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"></Label>
+            <Label x:Name="txbCompChoice" Margin="10,125" HorizontalAlignment="Center" Width="120" Height="100">
+                <Image Name="ImageCompChoice" Source="{Binding ImagePath}" Stretch="Fill" Visibility="Visible"/>
+            </Label>
+        </StackPanel>
+        <Label Content= "Score"  Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"
+                   FontSize="15" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"  ></Label>
+        <Label Content= "Player"  Grid.Column="1" Grid.Row="1"
+                   FontSize="17" FontWeight="Bold" Height="35"
+                   HorizontalAlignment="Center" Margin="0,25"/>
+        <Label Content= "Computer"  Grid.Column="2" Grid.Row="1"
+                   FontSize="17" FontWeight="Bold" Height="35"/>
+        <TextBox x:Name="txbScoreComp" Text="{Binding ScoreComputer}" Grid.Column="1" 
+                     Grid.Row="2" FontSize="20" 
+                     FontWeight="Bold" Height="35" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbScorePlayer" Text="{Binding ScorePlayer}" Grid.Column="2" 
+                     Grid.Row="2" FontSize="20"  FontWeight="Bold" Height="35" VerticalAlignment="Top"/>
+        <Label x:Name="lblWinner" Content="{Binding MessageCode, Converter={StaticResource MessageConverter}}" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" 
+               FontSize="15" 
+                   FontWeight="Bold" Height="35" VerticalAlignment="Bottom"/>
+        <Button x:Name="startGame" Content="Start" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Height="30" 
+                    FontSize="20" 
+                    FontWeight="Bold" Background="Black" Foreground="White"
+                    Click="startGame_Click"></Button>
+    </Grid>
+</Window>
